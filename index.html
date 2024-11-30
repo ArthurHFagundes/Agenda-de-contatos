@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <header>
+        <h1>AGENDA DE CONTATOS</h1>
+        <div>
+            <form id="form-dados">
+                <input id="nome" type="text" placeholder="Insira o nome e sobrenome" required>
+                <input id="telefone" type="tel" placeholder="Insira o telefone (dd nnnn-nnnn)" pattern="[1-9]{2} [1-9]{4}-[0-9]{4}" required>
+                <button type="submit">Adicionar +</button>
+            </form>
+        </div>
+    </header>
+    <table> 
+        <thead> 
+            <tr> 
+                <th>Nome da pessoa</th>
+                <th>Número de telefone</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td>---</td>
+            <td>---</td>
+            <td><!--AQUI SERÁ O BOTÃO INFO--></td>
+            <td><!--AQUI SERÁ O BOTÃO REMOVE--></td>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
